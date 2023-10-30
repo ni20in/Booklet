@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Reusable Notebook</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Cart Page for the products you want to buy.">
+  <meta name="author" content="Khushi Johri">
+  <link rel="stylesheet" href="../src/styles.css" />
+  <link rel="stylesheet" href="./styles-cart.css" />
+</head>
+
+<body>
+  <div class="full-container">
+    <!-- header -->
+    <header>
+      <!-- announcement-bar -->
+      <div class="announcement-bar">
+        10% DISCOUNT ON YOUR FIRST ORDER: (Use Code) BOOKLET10
+      </div>
+      <!-- main-header-content -->
+      <div class="main-header-section">
+        <a href="../index.html">
+          <img src="../images/Booklet-logos_transparent.png" class="header-img" />
+        </a>
+        <input class="search-bar" type="text" placeholder="What are you looking for?" />
+
+        <a href=""><img src="../images/search.svg" class="search-img">
+        </a>
+
+        <a href="../signup/signup.html">
+          <button class="signup-btn button-design">
+            Sign Up
+          </button>
+        </a>
+
+        <a href="../login/login.html">
+          <button class="login-btn button-design">
+            Log In
+          </button>
+        </a>
+
+        <a href="../wishlist/wishlist.html">
+          <div class="badge-icon-container">
+            <div class="badge-icon">0</div>
+            <button class="icon-btn1 button-design-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-suit-heart-fill heart" viewBox="0 0 16 16">
+                <path
+                  d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+              </svg>
+              </svg>
+            </button>
+          </div>
+        </a>
+
+        <a href="../cart/cart.html">
+          <div class="badge-icon-container">
+            <div class="badge-icon">0</div>
+            <button class="icon-btn2 button-design-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-cart-fill cart-icon-link" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg>
+            </button>
+        </a>
+      </div>
+    </header>
+
+
+    <nav>
+      <div class="navigation">
+        <a href="../reusable-notebook/reusable-notebook.html" class="nav-item">Reusable Notebook</a>
+        <a href="../sticker/sticker.html" class="nav-item">Stickers</a>
+        <a href="../poster/poster.html" class="nav-item">Posters</a>
+        <a href="../bookmark/bookmark.html" class="nav-item>Bookmarks</a>
+				<a href=" ../all-products/all-products.html" class="nav-item">All Products</a>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+      <div class="cart-container">
+        <p class="cart-heading">My Cart</p>
+      </div>
+      <div class="main-content">
+
+        <!-- product card  -->
+        <div class="card-container">
+          <img src="../images/product.jpg" alt="" class="product-img" />
+          <div class="card-content">
+            <div class="product-name">Don't Stop Reusable Notebook</div>
+            <div class="product-description">
+              With a 1.2mm Fine Tip Pen & a Napkin
+            </div>
+            <div class="price">
+              ₹499 <span class="strike-price"> ₹999</span>
+              <span class="product-discount">(50%)</span>
+            </div>
+
+            <div class="quantity-container">
+              <p class="quantity-heading">Quantity:</p>
+              <button class="quantity-btn decrease-btn">-</button>
+              <p class="quantity-value">1</p>
+              <button class="quantity-btn increase-btn">+</button>
+            </div>
+            <div class="cart-wishlist-buttons-container">
+              <a href="" class="button-link">
+                <button class="move-to-wishlist">
+                  Move to Wishlist
+                </button>
+              </a>
+
+              <a href="" class="button-link">
+                <button class="add-to-cart">
+                  Remove from Cart
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- product billing -->
+        <div class="product-billing">
+
+          <!-- coupon -->
+          <div class="coupon-container">
+            <img src="../images/coupon-tag.svg">
+            <p class="coupon"> Apply Coupons </p>
+          </div>
+          <!-- product details -->
+          <div class="price-detail-card-container">
+            <p class="price-detail-heading">Price Detail</p>
+            <hr color="grey" size="1" />
+
+            <div class="price-detail-content-container">
+              <div class="price-detail-content">
+                <p class="left-detail">Price (1 Items):</p>
+                <p class="right-detail">Rs. 499.00</p>
+              </div>
+
+              <div class="price-detail-content">
+                <p class="left-detail">Discount:</p>
+                <p class="right-detail discount-price">- Rs. 149.00</p>
+              </div>
+
+              <div class="price-detail-content">
+                <p class="left-detail">Delivery Charges:</p>
+                <p class="right-detail">Rs. 70.00</p>
+              </div>
+            </div>
+
+            <hr color="grey" size="1" />
+
+            <div class="price-detail-content total-amount-container">
+              <p class="left-detail total-amount">Total Amount:</p>
+              <p class="right-detail total-amount">Rs. 420</p>
+            </div>
+
+            <hr color="grey" size="1" />
+
+            <p class="discount-price">You will save Rs 149.00 on this order</p>
+
+            <hr color="grey" size="1" />
+
+            <div class="center-aligned">
+              <a href="">
+                <button class="primary-btn button-design">Place Order</button>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+			<div class="footer-main">
+				<div class="footer-heading">
+					<div class="footer-sub-heading">
+						<a href="../index.html">
+							<img src="../images/Booklet-logos_transparent.png" class="header-img" />
+						</a>
+						<p>Bhopal , M.P</p>
+						<a href="mailto: nl566954@gmail.com">Email</a>
+					</div>
+
+					<div class="footer-sub-heading">
+						<h2>Products</h2>
+						<a href="../reusable-notebook/reusable-notebook.html">Reusable Notebooks</a>
+						<a href="../sticker/sticker.html">Stickers</a>
+						<a href="../poster/poster.html">Poster</a>
+						<a href="../bookmark/bookmark.html">Bookmarks</a>
+					</div>
+
+					<div class="footer-sub-heading">
+						<h2>Information</h2>
+						<a href="../index.html">Home</a>
+						<a href="../about/about.html">About Us</a>
+						<a href="../logout/logout.html">Log Out</a>
+					</div>
+				</div>
+
+				<hr color="yellow" size="1" />
+
+				<div class="footer-bottom">
+					<div class="footer-links">
+					
+						<a href="https://linkedin.com/in/nitinlalwani8">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin linkedin-link" viewBox="0 0 16 16">
+								<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+							</svg>
+					</a>
+					<a href="https://github.com/ni20in">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+							<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+						</svg>
+				</a>
+				</div>
+		
+				<div class="footer-copyright">
+					Copyright &copy; 2023  Nitin Lalwani
+				</div>
+				</div>
+			</div>
+		</footer>
+  </div>
+
+</body>
+
+</html>
